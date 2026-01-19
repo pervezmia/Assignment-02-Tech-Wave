@@ -318,6 +318,55 @@ header nav .bar {
 
 
 
+/* feature section */
+.featured-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+
+.card-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0px;
+}
+
+.card {
+    width: 380px;
+    border-radius: 15px;
+    background-color: #250D44;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    line-height: 1.5rem;
+}
+
+.card span {
+    color: #00FF88;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+
 
 
 /* responsive for small device */
