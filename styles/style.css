@@ -368,6 +368,61 @@ header nav .bar {
 
 
 
+/* host section  */
+.host-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #230E3D;
+}
+
+.meet-the-host-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    padding: 120px 0px;
+}
+
+.host-container {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    grid-template-areas:
+        "host content content content"
+
+}
+
+
+.host-img {
+    grid-area: host;
+}
+
+.host-content {
+    grid-area: content;
+}
+
+.host-content ul {
+    gap: 10px;
+}
+
+.host-content ul li {
+    list-style: none;
+}
+
+.host-content ul li a {
+    text-decoration: none;
+}
+
+.host-content ul li a img {
+    padding: 10px;
+    border: 1px solid #00FF88;
+    border-radius: 50px;
+}
+
+
 
 /* responsive for small device */
 @media screen and (max-width: 576px) {
