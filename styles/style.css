@@ -19,8 +19,17 @@
     display: flex;
 }
 
-.display-grid{
+.display-grid {
     display: grid;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+
 }
 
 
@@ -71,7 +80,7 @@ header ul li a {
 }
 
 
-.btn{
+.btn {
     font-size: 1rem;
     font-weight: 600;
     padding: 14px 16px;
@@ -80,7 +89,8 @@ header ul li a {
     color: #FFFFFF;
     background-image: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05);
     background-image: linear-gradient(45deg, #9100F8, #FB09B4, #F7E93F);
     transition: .5s;
@@ -93,53 +103,68 @@ header nav .bar {
 
 
 /* hero section  */
-.hero-section{
+.hero-section {
     background-image: url('../assets/hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
-.hero-container{
+.hero-container {
+    flex-direction: column;
     max-width: 550px;
     margin: 0 auto;
     padding: 101px 0px;
 }
 
-.hero-circle{
+.hero-circle {
     justify-content: center;
     align-items: center;
     position: relative;
     /* max-width: 350px; */
 }
 
-.hero-circle{
+.hero-circle img {
+    max-width: 350px;
     width: 100%;
 
 }
-.microphone{
+
+.microphone {
     position: absolute;
 }
 
-.hero-content{
+.microphone img {
+    width: 100%;
+}
+
+.challenge-btn {
+    position: absolute;
+    z-index: 10;
+    /* margin-top: -300px;
+    margin-left: 200px; */
+
+}
+
+.hero-content {
     text-align: center;
 }
 
-.hero-content h3{
+.hero-content h3 {
     font-size: 3.8rem;
     font-weight: 900;
     color: #FFFFFF;
     margin-bottom: 8px;
 }
 
-.hero-content p{
+.hero-content p {
     font-size: 1rem;
     font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
 
-.hero-content .btn-2{
+.hero-content .btn-2 {
     padding: 12px 20px;
     border: 1px solid #00FF88;
     color: #00FF88;
@@ -148,17 +173,79 @@ header nav .bar {
     font-size: 1rem;
     font-weight: 600;
     margin-left: 8px;
-    
+
 }
 
-.hero-content .btn-2:hover{
+.hero-content .btn-2:hover {
     transform: rotate(20deg) scale(1.1);
     transition: 1s;
 
 }
 
 
+/* about section */
 
+.about-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0px 120px;
+}
+
+.about-container .about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+    line-height: 20px;
+}
+
+.about-content hr {
+    border: 1px solid #ffffff2d;
+    margin-bottom: 80px;
+}
+
+
+
+
+.about-rating-container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.about-rating-container .about-rating-part {
+    text-align: center;
+}
+
+.about-rating-part h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 1rem;
+}
+
+.about-rating-part p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
 
 
 
@@ -167,7 +254,7 @@ header nav .bar {
 /* responsive for small device */
 @media screen and (max-width: 576px) {
 
-    header nav{
+    header nav {
         padding: 18px 20px;
     }
 
@@ -181,7 +268,46 @@ header nav .bar {
         color: #FFFFFF;
     }
 
+    .hero-section {
+        background-position: center top;
+    }
+
+    .hero-circle {
+        top: -100px;
+
+    }
+
+    .hero-circle img {
+        width: 40%;
+        margin-top: -10px;
+
+
+    }
+
+    .microphone img {
+        width: 50%;
+        margin-top: 0%;
+        margin-left: 25%;
+    }
+
+    .challenge-btn {
+        position: absolute;
+        z-index: 10;
+        /* margin-top: -120px;
+        margin-left: 180px; */
+    }
+
+    .about-container,
+    .card-section {
+        padding: 0px 20px;
+    }
+
+    .about-rating-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px 20px;
+
+    }
+
     
-
-
 }
