@@ -481,6 +481,31 @@ header nav .bar {
         padding: 40px 20px;
 
     }
+    .techwave-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
 
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .host-container {
+        text-align: center;
+        gap: 24px;
+
+        grid-template-areas:
+            "host"
+            "content"
+
+    }
+
+    .host-content ul {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
     
 }
